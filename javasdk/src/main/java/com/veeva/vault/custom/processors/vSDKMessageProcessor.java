@@ -636,7 +636,7 @@ public class vSDKMessageProcessor implements MessageProcessor {
 	                .setBodyParam("source_binding_rule__v", "Latest version")
 	                .setBodyParam("name__v",docName)
 	                .setBodyParam("type__v",type)
-	                .setBodyParam("lifecycle__v", "vSDK Document Lifecycle");
+	                .setBodyParam("lifecycle__v", "vSDK Spark Document Lifecycle");
 
 	        httpService.send(request, HttpResponseBodyValueType.STRING)
                 .onSuccess(response -> {

@@ -53,7 +53,7 @@ public class vSDKCrosslinkDocumentAction implements DocumentAction {
         	String queueName = "vsdk_v2v_out_queue__c";
         	Message message = queueService.newMessage(queueName)
             	.setAttribute ("object", "documents")
-            	.setAttribute ("type", "vSDK Document")
+            	.setAttribute ("type", "vSDK Spark Document")
             	.setAttribute ("state", "crosslink")
             	.setAttribute ("docId", docId)
             	.setAttribute ("docName", name);
